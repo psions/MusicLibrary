@@ -30,7 +30,7 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('value', models.CharField(choices=[('Unlike', 'Unlike'), ('Like', 'Like')], default='Like', max_length=10)),
-                ('post', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='music.post')),
+                ('post', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='music.posts')),
                 ('user', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to=settings.AUTH_USER_MODEL)),
             ],
         ),
