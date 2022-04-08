@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'music',
     
+    
 ]
 
 MIDDLEWARE = [
@@ -55,7 +56,7 @@ ROOT_URLCONF = 'music_library.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [( 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
